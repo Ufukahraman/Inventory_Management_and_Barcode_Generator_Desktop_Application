@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\ufukc\source\repos\proserv\proserv\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="EkleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EkleWindow2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GuncelleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GuncelleWindow2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Page2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SayımWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ucontroller\UserControl1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ucontroller\UserControl2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ucontroller\UserControl3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ucontroller\UserControl4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Ucontroller\UserControl5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="EkleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EkleWindow2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GuncelleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GuncelleWindow2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Page2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SayımWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ucontroller\UserControl1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ucontroller\UserControl2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ucontroller\UserControl3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ucontroller\UserControl4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Ucontroller\UserControl5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

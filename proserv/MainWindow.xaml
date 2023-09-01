@@ -1,0 +1,118 @@
+﻿<Window x:Class="proserv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:proserv"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1200" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent">
+
+
+    <Grid Margin="5" Background="#FFE4E4E4">
+
+        <Grid.Effect>
+            <DropShadowEffect BlurRadius="10" Direction="265" Opacity="0.475" ShadowDepth="4"/>
+        </Grid.Effect>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" >
+
+            <Border Background="#FFE4E4E4" x:Name="brd_white" MouseDown="brd_white_MouseDown"  >
+
+
+                <Grid>
+
+
+
+                    <DockPanel HorizontalAlignment="Right" >
+
+
+                        <Button  x:Name="mini_btn" Height="30" Width="35" Style="{DynamicResource offStyle}" Click="mini_btn_Click">
+                            <Image  Source="Images/minimize.png" Width="20" >
+
+                            </Image>
+                        </Button>
+                        <Button x:Name="maxi_btn"  Height="30" Width="35"  Style="{DynamicResource offStyle}" Click="maxi_btn_Click">
+                            <Image  Source="Images/restore.png" Width="20" >
+
+                            </Image>
+                        </Button>
+                        <Button x:Name="off_btn" Height="30" Width="35"   Style="{DynamicResource offStyle}" Click="off_btn_Click">
+                            <Image  Source="Images/close.png" Width="20">
+
+                            </Image>
+                        </Button>
+
+                    </DockPanel>
+                    <DockPanel HorizontalAlignment="Left">
+                        <Button   x:Name="user_btn" Click="user_btn_Click" Height="30" Width="35" Style="{DynamicResource offStyle}" >
+                            <Image Source="Images/user.png" Width="20"></Image>
+                        </Button>
+                        <Label x:Name="user_lbl"  Content=" " HorizontalAlignment="Center" FontSize="15" VerticalAlignment="Center"></Label>
+                    </DockPanel>
+                </Grid>
+
+
+
+            </Border>
+        </Border>
+
+
+        <Border Background="White"  Grid.Row ="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="171"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="8*"/>
+                        <RowDefinition Height="2*"/>
+
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Background="AliceBlue"  MaxHeight="1000" Height="422" VerticalAlignment="Top" Grid.Row="0">
+                        <Image Source="Images/proserv.png" Width="180" HorizontalAlignment="Center"/>
+                        <Button Style="{DynamicResource MenuButtonStyle  }" Content="HoneyWell" x:Name="hw_btn" Click="hw_btn_Click"  Height="55" ></Button>
+                        <Button Style="{DynamicResource MenuButtonStyle  }" Content="HW Anlık Stok" x:Name="hw_anlık_btn" Click="hw_anlık_btn_Click" Height="55" ></Button>
+                        <Button Style="{DynamicResource MenuButtonStyle  }" Content="Sayım - Konum" x:Name="sayimkonum_btn" Click="sayimkonum_btn_Click" Height="55" ></Button>
+                        <Button Style="{DynamicResource MenuButtonStyle  }" Content=" Sayım Başla" x:Name="sayimbasla_btn" Click="sayimbasla_btn_Click" Height="55" ></Button>
+                        <Button Style="{DynamicResource MenuButtonStyle  }" Content="Sayım Görüntüle" x:Name="sayım_btn" Click="sayım_btn_Click" Height="55" ></Button>
+                        <Button Style="{DynamicResource MenuButtonStyle  }" Content="Barkod Görüntüle" x:Name="barkod_btn"  Height="55" Click="barkod_btn_Click" ></Button>
+                    </StackPanel>
+
+                    <Label Style="{DynamicResource LabelStyle}" Content="0.0.1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="20"  FontSize="12" >
+                       
+                    </Label>
+
+
+
+
+
+
+
+
+                </Grid>
+                <Grid  Grid.Column="1">
+                    <Grid x:Name="Content_icerik" Background="#124588">
+                        <Image Source="Images/proserv.png" Width="765" HorizontalAlignment="Center" Margin="0,75,0,96"/>
+                    </Grid>
+                </Grid>
+
+
+            </Grid>
+        </Border>
+
+
+        <Rectangle  x:Name="modalBackground" Visibility="Collapsed" Fill="#80000000" Panel.ZIndex="1"/>
+    </Grid>
+</Window>
+

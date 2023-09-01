@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\close.png" />
+    <None Remove="Images\magnifier.png" />
+    <None Remove="Images\minimize.png" />
+    <None Remove="Images\proserv.png" />
+    <None Remove="Images\restore.png" />
+    <None Remove="Images\user.png" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="Microsoft.Graph.Beta" Version="0.47.0-preview" />
+    <PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+    <Resource Include="Images\magnifier.png" />
+    <Resource Include="Images\minimize.png" />
+    <Resource Include="Images\proserv.png" />
+    <Resource Include="Images\restore.png" />
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
+
+</Project>
